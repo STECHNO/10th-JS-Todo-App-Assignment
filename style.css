@@ -1,0 +1,57 @@
+body{
+    background-color: lightsilver !important;
+}
+
+.main{
+    width: 400px !important;
+    height: 750px;
+    margin-top: 90px !important;
+}
+
+.main-head{
+    width: 400px !important;
+    height: 90px;
+}
+
+.bor{
+    border: 1px solid black;
+}
+
+.app-head{
+    width: 400px !important;
+    height: 100px;
+}
+
+.back-color{
+    background-color: #FFFFFF !important;
+}
+.type-text{
+    width: 280px;
+    border: none;
+    height: 45px !important;
+}
+
+.type-text:focus{
+    outline: none;
+    border-bottom: 1px solid lightslategray;
+}
+
+.fa-plus:active, .fa-refresh:active{
+    text-shadow: 0 0 3px lightslategray, 0 0 5px lightslategray;
+}
+
+.item-head{
+    width: 400px;
+    height: 560px;
+    /* box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); */
+}
+
+.fa-trash, .fa-pencil {
+    float: right;
+    padding-left: 15px;
+}
+
+.col-12 p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
