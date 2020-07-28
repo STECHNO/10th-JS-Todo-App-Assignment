@@ -1,5 +1,5 @@
 body{
-    background-color: lightsilver !important;
+    background-color: white !important;
 }
 
 .main{
@@ -11,10 +11,7 @@ body{
 .main-head{
     width: 400px !important;
     height: 90px;
-}
-
-.bor{
-    border: 1px solid black;
+    background-color: #ff6f61 !important;
 }
 
 .app-head{
@@ -22,19 +19,37 @@ body{
     height: 100px;
 }
 
-.back-color{
-    background-color: #FFFFFF !important;
-}
 .type-text{
     width: 280px;
     border: none;
     height: 45px !important;
+    background-color: transparent;
 }
+
+/* above css code is for user input for getting user Todo */
 
 .type-text:focus{
     outline: none;
     border-bottom: 1px solid lightslategray;
 }
+
+/* above css code is for user input for getting user Todo */
+
+.type-text-task{
+    width: 260px;
+    border: none;
+    height: 45px !important;
+    background-color: transparent;
+}
+
+/* above css is for input field which is creating by clicking on plus button*/
+
+.type-text-task:focus{
+    outline: none;
+    color: tomato;
+} 
+
+/* above css is for input field which is creating by clicking on plus button*/
 
 .fa-plus:active, .fa-refresh:active{
     text-shadow: 0 0 3px lightslategray, 0 0 5px lightslategray;
@@ -43,15 +58,28 @@ body{
 .item-head{
     width: 400px;
     height: 560px;
-    /* box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); */
+    overflow: auto !important;
 }
 
-.fa-trash, .fa-pencil {
+/* above css is for div where individual todo is saving when click on plus button*/
+
+.fa-trash, .fa-pencil-square-o{
     float: right;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-right: 10px;
 }
 
-.col-12 p{
-    margin-top: 10px;
-    margin-left: 10px;
+.fa-trash:active, .fa-pencil-square-o:active{
+    text-shadow: 0 0 3px lightslategray, 0 0 5px lightslategray;
+    color: tomato;
+}
+
+.todo-design{
+    box-shadow: 3px 3px 9px lightslategray;
+    height: 45px;
+    font-size: 25px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    scroll-behavior: auto;
 }
