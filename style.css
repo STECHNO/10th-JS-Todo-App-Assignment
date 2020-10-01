@@ -49,6 +49,12 @@ body{
     color: tomato;
 } 
 
+.type-text-task:enabled{
+    outline: none;
+    color: tomato !important;
+    cursor: text !important;
+} 
+
 /* above css is for input field which is creating by clicking on plus button*/
 
 .fa-plus:active, .fa-refresh:active{
@@ -63,17 +69,18 @@ body{
 
 /* above css is for div where individual todo is saving when click on plus button*/
 
-.fa-trash, .fa-pencil-square-o{
+.fa-trash, .fa-pencil, .fa-check{
     float: right;
     padding-left: 10px;
     padding-top: 12px;
     padding-right: 10px;
 }
 
-.fa-trash:active, .fa-pencil-square-o:active{
+.fa-trash:active, .fa-pencil:active, .fa-check:active{
     text-shadow: 0 0 3px lightslategray, 0 0 5px lightslategray;
     color: tomato;
 }
+
 
 .todo-design{
     box-shadow: 3px 3px 9px lightslategray;
@@ -82,4 +89,41 @@ body{
     padding-left: 5px;
     margin-bottom: 5px;
     scroll-behavior: auto;
+}
+
+.b{
+    border: 1px solid red;
+}
+
+.user_panel{
+    width: 100%;
+    height: 25px;
+    background-color: tomato;
+}
+.panel{
+    width: 100%;
+    height: 60px;
+}
+
+.user_data{
+    float: right;
+}
+
+.user_data a{
+    color: black;
+    padding-left: 10px;
+}
+
+.user_profile_image{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 50px !important;
+}
+
+.user_profile_image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px !important;
 }
