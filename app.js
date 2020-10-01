@@ -14,7 +14,7 @@ const signIn = () => {
         var user = result.user;
         sendUserData(user);
     }).catch(function (error) {
-        console.log(error.message)
+        swal(error.message)
     });
 
 }
