@@ -89,17 +89,21 @@ function addTask() {
             key: key
         }
 
-        if (document.getElementById("add-task").value === " ") {
+        if (document.getElementById("add-task").value === '') {
             swal("Please Enter Any Todo..");
+            document.getElementById('add-task').placeholder = 'What need to be done?';
         }
         else {
             var userId = firebase.auth().currentUser.uid;
             firebase.database().ref('userData/' + userId + 'todos').child(key).set(currentUserTodos);
-            document.getElementById('add-task').value = ' ';
+            document.getElementById('add-task').value = '';
+            document.getElementById('add-task').placeholder = 'What need to be done?';
         }
-    } else {
+    }
+    else {
         swal('Please Sign in first');
-        document.getElementById('add-task').value = ' ';
+        document.getElementById('add-task').value = '';
+        document.getElementById('add-task').placeholder = 'What need to be done?';
     }
 
 }
