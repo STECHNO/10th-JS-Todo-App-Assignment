@@ -89,7 +89,7 @@ function addTask() {
             key: key
         }
 
-        if (document.getElementById("add-task").value === "") {
+        if (document.getElementById("add-task").value === " ") {
             swal("Please Enter Any Todo..");
         }
         else {
@@ -98,9 +98,10 @@ function addTask() {
             document.getElementById('add-task').value = '';
         }
     } else {
-        swal('Please Sign in first')
+        swal('Please Sign in first');
+        document.getElementById('add-task').value = '';
     }
-    
+
 }
 
 function editBtn(key, element) {
@@ -142,7 +143,7 @@ function deleteAll() {
         firebase.database().ref('userData/' + userId + 'todos').remove();
         document.getElementById("todoitems").innerHTML = '';
     }
-    
+
 }
 
 
