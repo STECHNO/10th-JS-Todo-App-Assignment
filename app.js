@@ -95,11 +95,11 @@ function addTask() {
         else {
             var userId = firebase.auth().currentUser.uid;
             firebase.database().ref('userData/' + userId + 'todos').child(key).set(currentUserTodos);
-            document.getElementById('add-task').value = '';
+            document.getElementById('add-task').value = ' ';
         }
     } else {
         swal('Please Sign in first');
-        document.getElementById('add-task').value = '';
+        document.getElementById('add-task').value = ' ';
     }
 
 }
